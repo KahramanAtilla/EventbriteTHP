@@ -6,7 +6,7 @@ class Event < ApplicationRecord
   validates :duration, presence: true
   validates :title, presence: :true, length: { in: 5..140 }
   validates :description, presence: true, length: { in: 20..1000 }
-  validates :price, presence: true, less_than_or_equal_to: 1000, greater_than: 1
+  validates :price, presence: true
   validates :location, presence: true
 
 
