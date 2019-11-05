@@ -52,7 +52,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Mon profile</a>
-          <a class="dropdown-item" href="<%= link_to "Se deconnecter", destroy_user_session_path, method: :delete %>"</a>
+          <a class="dropdown-item" <%= link_to "Se deconnecter", destroy_user_session_path, method: :delete %></a>
+	  
+
         </div>
       </li>
       <% end %>
