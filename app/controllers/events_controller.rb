@@ -12,7 +12,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(price: [:usurname], title: params[:title], description: params[:content])
+    @event = Event.new(title: params[:title], price: params[:usurname],  description: params[:content], location: params[:location])
 
     if @event.save
       redirect_to root_path
